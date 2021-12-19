@@ -19,42 +19,34 @@
     <meta name="description" content="About page with background information about the blog and the author.">
     <link href="/css/about.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/modal.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Bucket List Travels - About Page</title>
 </head>
+
 <body>
 
-    <header>
-        <nav>
-        
-            <!-- TOPNAV -->
-            <div class="topnav" id="myTopnav">
-        
-                <!-- LOGO -->
-                <a href="/index.html">
-                    <div class="logo">
-                        <img src="/image/logo-white.png">
-                    </div>
-                </a>
-        
-                <div class="topnav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html" class="active">About</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-                </div>
-        
-            </div>
-        </nav>
+    <!-- LOGO -->
+    <div class="logo">
+        <a href="/index.html">
+            <img src="/image/logo-white.png">
+        </a>
+    </div>
+    
+    <!-- TOPNAV -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </div>
     
         <div class="header-about">
-            <!-- <h1>About</h1> -->
             <img src="">
         </div>
-    </header>
 
     <main>
         <!-- ABOUT1 -->
@@ -63,7 +55,15 @@
         
         <div class="about-container">
             <div class="about-img">
-                <img src="/image/about2-img.png" alt="image of a backpacker">
+                <img id="modalImg" src="/image/about2-img.png" alt="image of a backpacker">
+
+                <!-- Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
             </div>
 
             <div class="about-text">
@@ -109,13 +109,15 @@
                 <a href="#" class="fa fa-pinterest"></a>
             </div>
             <div class="copyright">
-                <p>© 2021 Bucket List Travels. All rights reserved.</p>
+                <p>Copyright © 2020. <b>Bucket List Travels.</b> All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- JAVASCRIPT -->
     <script src="/js/displayError.js"></script>
+    <script src="/js/topnav.js"></script>
+    <script src="/js/modal.js"></script>
     
 </body>
 </html>

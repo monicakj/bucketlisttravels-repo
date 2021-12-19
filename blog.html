@@ -19,6 +19,7 @@
     <meta name="description" content="Blog page which contains a list of blog posts.">
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/blog.css" rel="stylesheet">
+    <!-- <link href="/css/modal.css" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,36 +27,26 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-        
-            <!-- TOPNAV -->
-            <div class="topnav" id="myTopnav">
-        
-                <!-- LOGO -->
-                <a href="/index.html">
-                    <div class="logo">
-                        <img src="/image/logo-white.png">
-                    </div>
-                </a>
-        
-                <div class="topnav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="blog.html" class="active">Blog</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-                </div>
-        
-            </div>
-        </nav>
-
-        <!-- <div class="header-blog">
-            <img src="">
-        </div> -->
-    </header>
+    <!-- LOGO -->
+    <div class="logo">
+        <a href="/index.html">
+            <img src="/image/logo-white.png">
+        </a>
+    </div>
+    
+    <!-- TOPNAV -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </div>
 
     <main>
+        <!-- HEADER -->
+        <div class="blog-hero"></div>
+
         <!-- POSTS -->
         <div class="blog-title">
             <h2>Blog Posts</h2>
@@ -83,7 +74,7 @@
                 <a href="#" class="fa fa-pinterest"></a>
             </div>
             <div class="copyright">
-                <p>© 2021 Bucket List Travels. All rights reserved.</p>
+                <p>Copyright © 2020. <b>Bucket List Travels.</b> All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -91,6 +82,9 @@
     <!-- JAVASCRIPT -->
     <script src="/js/displayError.js"></script>
     <script src="/js/blog.js"></script>
+    <script src="/js/topnav.js"></script>
+    <script src="/js/modal.js"></script>
+
     
 </body>
 </html>
