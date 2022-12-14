@@ -1,5 +1,26 @@
 .index-main {
     height: 100%;
+
+    .card {
+        height: fit-content;
+    }
+
+    .readmore-btn {
+        padding: 10px;
+        width: 150px;
+        border: none;
+        border-radius: 5px;
+        background-color: #000;
+        color: #f3f3f3;
+        font-family: montserrat;
+        border: 2px solid #000;
+
+        &:hover {
+            background-color: white;
+            color: black;
+            transition: 0.5s;
+        }
+    }
 }
 
 /* HEADER HOME */
@@ -182,6 +203,7 @@
     transform: translate(-50%, -50%);
     color: white;
     line-height: 30px;
+    width: fit-content;
 }
 
 .about-text h3 {
@@ -228,86 +250,10 @@
 }
 
 /* DESTINATIONS */
-.asia,
-.europe,
-.africa,
-.america {
-    position: relative;
-    height: 500px;
-    margin: 0 auto;
-    margin-bottom: 80px;
-    text-align: center;
-    width: 80%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+.destination {
+    margin-bottom: 100px;
 }
 
-.asia:hover,
-.europe:hover,
-.africa:hover,
-.america:hover {
-    transform: scale(1.05);
-    transition: 0.5s ease;
-}
-
-.asia {
-    background-image: url(/image/asia.png);
-}
-
-.europe {
-    background-image: url(/image/europe.png);
-}
-
-.africa {
-    background-image: url(/image/africa.png);
-}
-
-.america {
-    background-image: url(/image/america.png);
-}
-
-.asia h1,
-.europe h1,
-.africa h1,
-.america h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
-    width: fit-content;
-    margin: auto;
-    height: fit-content;
-    background-color: black;
-    padding: 10px 20px;
-}
-
-.learnmore-button {
-    width: 154px;
-    height: 48px;
-    background-color: black;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 1s;
-    /* border-radius: 6px; */
-    border: none;
-    border: 1px solid black;
-    margin-top: 20px;
-}
-
-.learnmore-button:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-}
 
 /* NEWSLETTER */
 .newsletter {
@@ -336,7 +282,7 @@
     }
 }
 
-.newsletter h2 {
+.newsletter h3 {
     margin-top: 4%;
     text-transform: uppercase;
     font-weight: bold;
@@ -365,7 +311,7 @@
     color: white;
     background-color: black;
     outline: none;
-    border-radius: 0px;
+    border-radius: 5px;
     letter-spacing: 1px;
     cursor: pointer;
     margin-top: 15px;
