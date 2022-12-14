@@ -1,7 +1,12 @@
-@import "partials/about";
-@import "partials/blog";
-@import "partials/contact";
-@import "partials/index";
+@import "partials/base";
 @import "partials/layout";
 @import "partials/modal";
 @import "partials/specificpage";
+@import "partials/footer";
+@import "partials/topnav";
+@import "partials/typography";
+
+@import "partials/index";
+@import "partials/about";
+@import "partials/blog";
+@import "partials/contact";

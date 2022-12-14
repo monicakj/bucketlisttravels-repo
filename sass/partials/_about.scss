@@ -1,6 +1,11 @@
+.about-main {
+    height: 100%;
+}
+
 .about {
 
     .about-hero {
+        background-image: url(/image/about-header.png);
 
         @media (max-width: 768px) {
         display: none;
