@@ -17,12 +17,6 @@ body {
   background-size: cover;
 }
 
-@media (max-width: 768px) {
-  .hero {
-    display: none;
-  }
-}
-
 /* LINKS */
 .links {
   margin-top: 30px;
@@ -332,11 +326,6 @@ input[type="submit-comment"]:hover {
 .navbar .fa-plane {
   color: white;
   margin-top: 1rem;
-}
-
-.navbar .navbar-toggler-icon a {
-  color: white;
-  background-color: white;
 }
 
 h1,
