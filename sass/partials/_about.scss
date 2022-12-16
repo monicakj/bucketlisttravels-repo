@@ -1,48 +1,44 @@
 .about-main {
     height: 100%;
-}
 
-.about {
+    .about {
 
-    .about-hero {
+        .about-hero {
         background-image: url(/image/about-header.png);
+        }   
 
-        @media (max-width: 768px) {
-        display: none;
+        h1 {
+            margin: 3rem 0 3rem 0;
+            text-transform: uppercase;
+
+
+            @media (max-width: 768px) {
+                text-align: center;
+            }
         }
-    }
 
-    h1 {
-        margin: 3rem 0 3rem 0;
-        text-transform: uppercase;
+        .row {
+            background-color: #f3f3f3;
+            height: fit-content;
+            margin-bottom: 4rem;
+            border: 1px solid #d5d5d5;
 
-
-        @media (max-width: 768px) {
-            text-align: center;
+            @media (max-width: 768px) {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
         }
-    }
 
-    .row {
-        background-color: #f3f3f3;
-        height: fit-content;
-        margin-bottom: 4rem;
-        border: 1px solid #d5d5d5;
+        .col {
+            padding: 2rem;
 
-        @media (max-width: 768px) {
-            display: grid;
-            grid-template-columns: 1fr;
+            @media (max-width: 768px) {
+                width: 100%;
+            }
         }
-    }
 
-    .col {
-        padding: 2rem;
-
-        @media (max-width: 768px) {
+        .profile-image {
             width: 100%;
         }
-    }
-
-    .profile-image {
-        width: 100%;
     }
 }
